@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Juan David Rojas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ec0404;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi nombre es Juan David Rojas</h1>
+
+    <p>Tengo 20 años y actualmente me encuentro cursando la carrera de Tecnología en Sistemas en la Universidad Santiago de Cali.</p>
+
+    <p>Disfruta de mi contenido! </p>
+</body>
+</html>
