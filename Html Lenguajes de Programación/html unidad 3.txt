@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Multihilo en Java</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programación Multihilo en Java</h1>
+
+    <p>La programación multihilo en Java permite ejecutar varias tareas simultáneamente, mejorando la concurrencia y el rendimiento. Aquí hay algunos conceptos clave:</p>
+
+    <h2>Hilos en Java</h2>
+    <p>En Java, puedes trabajar con hilos utilizando la clase `Thread`. Aquí hay un ejemplo básico de cómo crear e iniciar un hilo:</p>
+    <code>
+        class MiHilo extends Thread {
+            public void run() {
+                // Código a ejecutar en el hilo
+            }
+        }
+
+        MiHilo miHilo = new MiHilo();
+        miHilo.start();
+    </code>
+
+    <h2>Sincronización de Hilos</h2>
+    <p>La sincronización es esencial para evitar problemas como condiciones de carrera. Puedes utilizar la palabra clave `synchronized` o usar objetos de bloqueo:</p>
+    <code>
+        class EjemploSincronizacion {
+            private int contador = 0;
+
+            public synchronized void incrementar() {
+                contador++;
+            }
+        }
+    </code>
+
+    <h2>Clase Executor</h2>
+    <p>La interfaz `Executor` en Java proporciona una forma más flexible de trabajar con hilos. Puedes utilizar `ExecutorService` para administrar un grupo de hilos:</p>
+    <code>
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        executor.execute(() -> {
+            // Código a ejecutar en el hilo
+        });
+    </code>
+
+    <p>Estos son solo algunos ejemplos básicos de la programación multihilo en Java. Hay muchas otras clases y conceptos que puedes explorar.</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrones de Diseño en Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Patrones de Diseño en Python</h1>
+
+    <p>Los patrones de diseño son soluciones generalizadas para problemas comunes en el desarrollo de software. En Python, se pueden implementar varios patrones de diseño. Aquí algunos ejemplos:</p>
+
+    <h2>1. Patrón Singleton</h2>
+    <p>Garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a esa instancia.</p>
+    <code>
+        class Singleton:
+            _instance = None
+
+            def __new__(cls):
+                if cls._instance is None:
+                    cls._instance = super(Singleton, cls).__new__(cls)
+                return cls._instance
+    </code>
+
+    <h2>2. Patrón Factory Method</h2>
+    <p>Define una interfaz para crear un objeto, pero deja que las subclases alteren el tipo de objetos que se crearán.</p>
+    <code>
+        from abc import ABC, abstractmethod
+
+        class Creator(ABC):
+            @abstractmethod
+            def factory_method(self):
+                pass
+
+        class ConcreteCreator(Creator):
+            def factory_method(self):
+                return ConcreteProduct()
+
+        class Product(ABC):
+            @abstractmethod
+            def operation(self):
+                pass
+
+        class ConcreteProduct(Product):
+            def operation(self):
+                return "Resultado de la operación en ConcreteProduct"
+    </code>
+
+    <p>Aquí se muestran algunos ejemplos de patrones de diseño en python.</p>
+</body>
+</html>

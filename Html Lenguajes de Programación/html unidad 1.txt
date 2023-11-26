@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Funcional en Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programación Funcional en Python</h1>
+
+    <p>La programación funcional en Python se centra en el uso de funciones puras y expresiones lambda. Aquí hay algunos conceptos clave:</p>
+
+    <h2>Funciones Puras</h2>
+    <p>Las funciones puras no tienen efectos secundarios y producen el mismo resultado para los mismos argumentos. Ejemplo:</p>
+   
+    <h2>Expresiones Lambda</h2>
+    <p>Las expresiones lambda permiten definir funciones anónimas en una sola línea
+    
+
+  
+</body>
+</html>
